@@ -1,0 +1,15 @@
+{
+  "originHash" : "6390086cdfc92ee3f7a4c658998d01c19181b52e93f731a8d805742bf912e4cc",
+  "pins" : [
+    {
+      "identity" : "alertcomponent",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JaCaLla/AlertComponent.git",
+      "state" : {
+        "revision" : "3d0fa42322f8646f4b2d7d588ff151651a06e676",
+        "version" : "0.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

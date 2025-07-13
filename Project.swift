@@ -2,6 +2,9 @@ import ProjectDescription
 
 let project = Project(
     name: "AlertComponentConsumer",
+    packages: [
+        .package(url: "https://github.com/JaCaLla/AlertComponent.git", from: "0.0.1")
+    ],
     targets: [
         .target(
             name: "AlertComponentConsumer",
@@ -18,7 +21,9 @@ let project = Project(
             ),
             sources: ["AlertComponentConsumer/Sources/**"],
             resources: ["AlertComponentConsumer/Resources/**"],
-            dependencies: []
+            dependencies: [
+                .package(product: "AlertComponent")
+            ]
         ),
         .target(
             name: "AlertComponentConsumerTests",

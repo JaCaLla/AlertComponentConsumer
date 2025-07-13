@@ -1,11 +1,26 @@
 import SwiftUI
+import AlertComponent
 
-public struct ContentView: View {
-    public init() {}
+struct ContentView: View {
+    @State private var showAlert = false
 
-    public var body: some View {
-        Text("Hello, World!")
-            .padding()
+    var body: some View {
+        ZStack {
+            Button("Show alert") {
+                showAlert = true
+            }
+
+            if showAlert {
+                AlertView(
+                    title: "Warning",
+                    message: "This is a personalized alert view",
+                    onDismiss: {
+                        showAlert = false
+                    }
+                )
+                .background(Color.black.opacity(0.4).ignoresSafeArea())
+            }
+        }
     }
 }
 
