@@ -3,7 +3,7 @@ import ProjectDescription
 let project = Project(
     name: "AlertComponentConsumer",
     packages: [
-        .package(url: "https://github.com/JaCaLla/AlertComponent.git", from: "0.0.1")
+        .package(url: "https://github.com/JaCaLla/AlertComponent.git", from: "0.2.1")
     ],
     targets: [
         .target(
